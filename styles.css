@@ -1,7 +1,7 @@
 
 body {
     margin: 0px;
-    font-family: "Monospace";
+    font-family: "Courier";
 }
 
 
@@ -20,9 +20,14 @@ body {
     display: flex;
 }
 
+.right-side {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
-    font-size: 0.9em;
+    font-size: 1.3em;
     text-transform: uppercase;
 }
 
@@ -55,15 +60,40 @@ body {
     border-bottom: black !important;
 }
 
-
-
+/* Home page */
 .profile-image-wrapper {
-    width: 300px;
+    width: 450px;
     float: left;
-    padding-left: 40px;
-    padding-right: 40px;
+    border: 20px solid black;
+    margin: 40px 80px 0px 80px;
 }
 
-.text-wrapper {
+.introduction-wrapper {
     display: inline;
 }
+
+.introduction-header {
+    color: black;
+    margin: 30px 0 5px 0;
+}
+
+.introduction-paragraph {
+    font-size: 20px;
+    margin: 0 200px 0 0;
+}
+
+.links-header {
+    color: black;
+    margin: 30px 0 5px 0;
+}
+
+.links-paragraph {
+    font-size: 20px;
+    margin: 0 200px 0 0;
+}
+
+
+/* Projects page */
+
+
+/* References page */
