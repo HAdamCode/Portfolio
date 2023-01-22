@@ -1,9 +1,10 @@
 body {
-  color: #e0e4cc;
+  color: whitesmoke;
   font-size: 1.2em;
   line-height: 1.6;
-  background: #587aa7;
+  background: black;
   overflow-x: hidden;
+  font-family: "Courier";
 }
 
 label .menu {
@@ -13,11 +14,11 @@ label .menu {
   z-index: 100;
   width: 200px;
   height: 200px;
-  background: #FFF;
+  background: black;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
-  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  box-shadow: 0 0 0 0 black, 0 0 0 0 black;
   cursor: pointer;
   
 }
@@ -54,7 +55,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+  box-shadow: 0 0 0 100vw rgb(35, 149, 153), 0 0 0 100vh #FFF;
   border-radius: 0;
   
 }
@@ -96,16 +97,17 @@ label input:checked + .menu + ul { opacity: 1; }
 .hamburger-menu a {
   margin-bottom: 1em;
   display: block;
-  color: #587aa7;
+  color: black;
   text-decoration: none;
   font-size: 30px;
+  font-weight: bold;
 }
 
 /* Home page */
 .profile-image-wrapper {
     width: 450px;
     float: left;
-    border: 20px solid black;
+    border: 20px solid #291702;
     margin: 40px 80px 0px 80px;
 }
 
@@ -115,7 +117,7 @@ label input:checked + .menu + ul { opacity: 1; }
 }
 
 .introduction-header {
-    color: black;
+    color: lightskyblue;
     margin: 30px 0 5px 0;
 }
 
@@ -125,7 +127,7 @@ label input:checked + .menu + ul { opacity: 1; }
 }
 
 .links-header {
-    color: black;
+    color: lightskyblue;
     margin: 30px 0 5px 0;
 }
 
@@ -134,9 +136,19 @@ label input:checked + .menu + ul { opacity: 1; }
     margin: 0 200px 0 0;
 }
 
+.link-wrapper {
+    color: lightskyblue;
+}
 
+.contact-header {
+    color: lightskyblue;
+    margin: 30px 0 5px 0;
+}
 
-
+.contact-paragraph {
+    font-size: 20px;
+    margin: 0 200px 0 0;
+}
 
 /* Projects page */
 

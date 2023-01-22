@@ -9,14 +9,35 @@
     <body>
         <div class="container">
             <label class="hamburger-menu">
-                <input type="checkbox">
+                <input type="checkbox" id="btnEnableDisable" value="Disable" onclick="EnableDisableLinks(this)">
                 <span class="menu"> <span class="hamburger"></span> </span>
-                <ul>
-                    <li> <a href="home.html">Home</a> </li>
-                    <li> <a href="projects.html">Projects</a> </li>
-                    <li> <a href="references.html">References</a> </li>
+                <ul id="menu-wrapper" style="pointer-events: none; cursor: default;"> 
+                    <li> <a id = "home" href="home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
+                    <li> <a id = "projects" href="projects.html" style="pointer-events: none; cursor: default;">Projects</a> </li>
+                    <li> <a id = "references" href="references.html" style="pointer-events: none; cursor: default;">References</a> </li>
                 </ul>
             </label>
         </div>
+        <script>
+            function EnableDisableLinks(btn) {
+                var menuLinks = document.getElementById("menu-wrapper");
+                var homeLinks = document.getElementById("home");
+                var projectsLinks = document.getElementById("projects");
+                var referencesLinks = document.getElementById("references");
+                if (btn.value == "Disable") {
+                    btn.value = "Enable";
+                    menuLinks.style = "";
+                    homeLinks.style = "";
+                    projectsLinks.style = "";
+                    referencesLinks.style = "";
+                } else {
+                    btn.value = "Disable";
+                    menuLinks.style = "visibility: hidden;";
+                    homeLinks.style = "visibility: hidden;";
+                    projectsLinks.style = "visibility: hidden;";
+                    referencesLinks.style = "visibility: hidden;";
+                }
+            }
+        </script>
     </body>
 </html>
