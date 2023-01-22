@@ -22,29 +22,109 @@
                 <img class="profile-image-wrapper" src="images/profile_picture.jpg"/>
                 <div class="introduction-wrapper"  >
                     <!-- Introduction -->
-                    <h1 class = "introduction-header">Introduction</h1>
-                    <p class = "introduction-paragraph">My name is Hunter Adam. I am studying Computer Science with an 
-                        emphasis in Robotics and Intelligent Systems as well as a minor 
-                        in Electrical Engineering at Colorado School of Mines. Currenly
-                        I am working for Tyler Technologies as a Software Developer. This 
-                        summer I will be working for The Trade Desk as a Full Stack Software 
-                        Developer Intern. 
-                    </p>
-                    <!-- Links -->
-                    <h1 class = "links-header">Links</h1>
-                    <p class = "links-paragraph">
-                        Visit my <a class = "link-wrapper" href="https://www.linkedin.com/in/hunter-adam-linked-profile/" target="_blank">LinkedIn</a> profile.<br>
-                        Visit my <a class = "link-wrapper" href="https://github.com/HAdamCode" target="_blank">Github</a> account for code projects.<br>
-                        Visit my <a class = "link-wrapper" href="resume.pdf" target="_blank">Resume</a> for more information.
-                    </p>
-                    <h1 class = "contact-header">Contact Me</h1>
-                    <p class = "contact-paragraph">
-                        Call or Text at <a class = "link-wrapper" href="tel:7193221809">719-322-1809</a><br>
-                        Email me at <a class = "link-wrapper" href = "mailto: hunter.j.adam@gmail.com">hunter.j.adam@gmail.com</a>.
-                    </p>
+                    <div class = "text-wrapper">
+                        <h1 class = "introduction-header">Introduction</h1>
+                        <p class = "introduction-paragraph">My name is Hunter Adam. I am studying Computer Science with an 
+                            emphasis in Robotics and Intelligent Systems as well as a minor 
+                            in Electrical Engineering at Colorado School of Mines. Currenly
+                            I am working for Tyler Technologies as a Software Developer. This 
+                            summer I will be working for The Trade Desk as a Full Stack Software 
+                            Developer Intern. 
+                        </p>
+                        <!-- Links -->
+                        <h1 class = "links-header">Links</h1>
+                        <p class = "links-paragraph">
+                            Visit my <a class = "link-wrapper" href="https://www.linkedin.com/in/hunter-adam-linked-profile/" target="_blank">LinkedIn</a> profile.<br>
+                            Visit my <a class = "link-wrapper" href="https://github.com/HAdamCode" target="_blank">Github</a> account for code projects.<br>
+                            Visit my <a class = "link-wrapper" href="resume.pdf" target="_blank">Resume</a> for more information.
+                        </p>
+                        <!-- Contacts -->
+                        <h1 class = "contact-header">Contact Me</h1>
+                        <p class = "contact-paragraph">
+                            Call or Text at <a class = "link-wrapper" href="tel:7193221809">719-322-1809</a><br>
+                            Email me at <a class = "link-wrapper" href = "mailto: hunter.j.adam@gmail.com">hunter.j.adam@gmail.com</a>.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="EnableDisableLinks.js"></script>
+        <h2 class="gallery-header" ><br>Fun Times Gallery</h2>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img class="gallery-wrapper" src="images/soccer_picture.jpg" >
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img class="gallery-wrapper" src="images/molly_picture.jpeg" >
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img class="gallery-wrapper" src="images/chorale_picture.jpg">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img class="gallery-wrapper" src="images/dog_picture.jpg">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img class="gallery-wrapper" src="images/quandry_picture.jpg">
+            </div>
+                
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class="gallery-wrapper" src="images/skit_picture.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class="gallery-wrapper" src="images/env_picture.jpg">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img class="gallery-wrapper" src="images/hike_picture.jpg">
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/soccer_picture.jpg" style="width:100%" onclick="currentSlide(1)" alt="Intramural Soccer Champs">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/molly_picture.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Willy Wonka Fun">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/chorale_picture.jpg" style="width:100%" onclick="currentSlide(3)" alt="Colorado Springs Children's Chorale Performance">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/dog_picture.jpg" style="width:100%" onclick="currentSlide(4)" alt="My Dogs">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/quandry_picture.jpg" style="width:100%" onclick="currentSlide(5)" alt="Long 14er Hike">
+                </div>    
+                <div class="column">
+                    <img class="demo cursor" src="images/skit_picture.jpg" style="width:100%" onclick="currentSlide(6)" alt="Time Machine Skit">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/env_picture.jpg" style="width:100%" onclick="currentSlide(6)" alt="Environmental Leadership Lab">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/hike_picture.jpg" style="width:100%" onclick="currentSlide(6)" alt="Backpacking Trip">
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="EnableDisableLinks.js">
+            
+        </script>
     </body>
 </html>
