@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   background: black;
   overflow-x: hidden;
-  font-family: "Courier";
+  font-family: Lucida Console; 
 }
 
 label .menu {
@@ -107,7 +107,7 @@ label input:checked + .menu + ul { opacity: 1; }
 .profile-image-wrapper {
     width: 450px;
     float: left;
-    border: 20px solid #291702;
+    border: 20px solid black;
     margin: 40px 80px 0px 80px;
 }
 

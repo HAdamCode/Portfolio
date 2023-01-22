@@ -13,9 +13,9 @@
                 <input type="checkbox" id="btnEnableDisable" value="Disable" onclick="EnableDisableLinks(this)">
                 <span class="menu"> <span class="hamburger"></span> </span>
                 <ul id="menu-wrapper" style="pointer-events: none; cursor: default;"> 
-                    <li> <a id = "home" href="home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
-                    <li> <a id = "projects" href="projects.html" style="pointer-events: none; cursor: default;">Projects</a> </li>
-                    <li> <a id = "references" href="references.html" style="pointer-events: none; cursor: default;">References</a> </li>
+                    <li> <a id = "home" href="Home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
+                    <li> <a id = "projects" href="Projects.html" style="pointer-events: none; cursor: default;">Projects</a> </li>
+                    <li> <a id = "references" href="References.html" style="pointer-events: none; cursor: default;">References</a> </li>
                 </ul>
             </label>
             <div class="content-wrapper">
@@ -34,37 +34,17 @@
                     <h1 class = "links-header">Links</h1>
                     <p class = "links-paragraph">
                         Visit my <a class = "link-wrapper" href="https://www.linkedin.com/in/hunter-adam-linked-profile/" target="_blank">LinkedIn</a> profile.<br>
-                        Visit my <a class = "link-wrapper" href="resume.pdf" target="_blank">Resume</a> for more information.<br>
-                        Visit my <a class = "link-wrapper" href="https://github.com/HAdamCode" target="_blank">Github</a> account for code projects.
+                        Visit my <a class = "link-wrapper" href="https://github.com/HAdamCode" target="_blank">Github</a> account for code projects.<br>
+                        Visit my <a class = "link-wrapper" href="resume.pdf" target="_blank">Resume</a> for more information.
                     </p>
                     <h1 class = "contact-header">Contact Me</h1>
                     <p class = "contact-paragraph">
-                        Email me at <a class = "link-wrapper" href = "mailto: hunter.j.adam@gmail.com">hunter.j.adam@gmail.com</a>.<br>
-                        Call or Text at <a class = "link-wrapper" href="tel:7193221809">719-322-1809</a>
+                        Call or Text at <a class = "link-wrapper" href="tel:7193221809">719-322-1809</a><br>
+                        Email me at <a class = "link-wrapper" href = "mailto: hunter.j.adam@gmail.com">hunter.j.adam@gmail.com</a>.
                     </p>
                 </div>
             </div>
         </div>
-        <script>
-            function EnableDisableLinks(btn) {
-                var menuLinks = document.getElementById("menu-wrapper");
-                var homeLinks = document.getElementById("home");
-                var projectsLinks = document.getElementById("projects");
-                var referencesLinks = document.getElementById("references");
-                if (btn.value == "Disable") {
-                    btn.value = "Enable";
-                    menuLinks.style = "";
-                    homeLinks.style = "";
-                    projectsLinks.style = "";
-                    referencesLinks.style = "";
-                } else {
-                    btn.value = "Disable";
-                    menuLinks.style = "visibility: hidden;";
-                    homeLinks.style = "visibility: hidden;";
-                    projectsLinks.style = "visibility: hidden;";
-                    referencesLinks.style = "visibility: hidden;";
-                }
-            }
-        </script>
+        <script type="text/javascript" src="EnableDisableLinks.js"></script>
     </body>
 </html>
