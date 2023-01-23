@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   background: black;
   overflow-x: hidden;
-  font-family: Lucida Console; 
+  font-family: Courier; 
 }
 
 label .menu {
@@ -117,34 +117,37 @@ label input:checked + .menu + ul { opacity: 1; }
 }
 
 .introduction-header {
-    color: lightskyblue;
+    color: white;
     margin: 30px 0 5px 0;
 }
 
 .introduction-paragraph {
     font-size: 25px;
     margin: 0 200px 0 0;
+    color: #41FF00;
 }
 
 .links-header {
-    color: lightskyblue;
+    color: white;
     margin: 30px 0 5px 0;
 }
 
 .links-paragraph {
     font-size: 25px;
     margin: 0 200px 0 0;
+    color: #41FF00;
 }
 
 
 .contact-header {
-    color: lightskyblue;
+    color: white;
     margin: 30px 0 5px 0;
 }
 
 .contact-paragraph {
     font-size: 25px;
     margin: 0 200px 0 0;
+    color: #41FF00;
 }
 
 .text-wrapper {
@@ -153,7 +156,7 @@ label input:checked + .menu + ul { opacity: 1; }
 }
 
 .link-wrapper {
-    color: lightskyblue;
+    color: #41FF00;
 }
 
 /* Gallery View */
@@ -217,6 +220,7 @@ label input:checked + .menu + ul { opacity: 1; }
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    color: #41FF00;
   }
   
   /* Container for image text */
@@ -259,9 +263,125 @@ label input:checked + .menu + ul { opacity: 1; }
 
   .gallery-header {
     text-align: center;
-    color: lightskyblue;
+    color: white;
   }
 /* Projects page */
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  border-bottom: black !important;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;   
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+}
+
+.portfolio-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+  font-weight: 600;
+  color: lightseagreen;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+}
 /* References page */
