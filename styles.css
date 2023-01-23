@@ -2,9 +2,13 @@ body {
   color: whitesmoke;
   font-size: 1.5em;
   line-height: 1.6;
-  background: black;
+  /* background: black; */
   overflow-x: hidden;
-  font-family: Courier; 
+  font-family: Gill Sans; 
+  background-image: url('images/background6.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 label .menu {
@@ -29,7 +33,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #587aa7;
+  background: #f8d35b;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -45,7 +49,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #69d2e7;
+  background: white;
 }
 
 label .hamburger:before { top: -10px; }
@@ -55,9 +59,8 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw rgb(35, 149, 153), 0 0 0 100vh #FFF;
-  border-radius: 0;
-  
+  box-shadow: 0 0 0 100vw rgb(143, 179, 181), 0 0 0 100vh #FFF;
+  border-radius: 0;  
 }
 
 label input:checked + .menu .hamburger {
