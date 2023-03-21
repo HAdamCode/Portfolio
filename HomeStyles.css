@@ -1,3 +1,10 @@
+.home-hunter-header {
+  font-size: 70px;
+  font-weight: 600;
+  color: #f8d35b;
+  padding-left: 80px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
