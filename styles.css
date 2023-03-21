@@ -115,9 +115,6 @@ label input:checked+.menu+ul {
   font-weight: bold;
 }
 
-
-/* footer */
-
 .additional-projects-header {
   text-align: center;
 }
@@ -126,12 +123,13 @@ label input:checked+.menu+ul {
   text-align: center;
 }
 
+/* footer */
+
 dl {
   padding-left: 50px;
 }
 
 .footer {
-  width: 100%;
   background-color: black;
 }
 
@@ -145,18 +143,18 @@ dl {
 
 .footer .col h2 {
   margin: 0;
-  padding: 0;
+  padding: 15px;
   font-size: 15px;
   line-height: 17px;
-  padding: 10px 0;
   color: #f8d35b;
-  ;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .footer .col ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
+  text-align: left;
 }
 
 .footer .col ul li {
@@ -180,14 +178,13 @@ dl {
   clear: both;
 }
 
-@media only screen and (min-width: 1280px) {
-  .contain {
-    width: 900px;
-    margin: 0 auto;
-  }
+.contain {
+  text-align: center;
+  display: block;
 }
 
-@media only screen and (max-width: 1139px) {
+
+/* @media only screen and (max-width: 1139px) {
   .contain .address {
     width: 1000px;
     display: block;
@@ -196,9 +193,9 @@ dl {
   .address h2 {
     margin: 0px;
   }
-}
+} */
 
-@media only screen and (max-width: 950px) {
+/* @media only screen and (max-width: 950px) {
   .footer .col {
     width: 33%;
   }
@@ -230,7 +227,7 @@ dl {
   .footer .col {
     width: 100%;
   }
-}
+} */
 
 .footer-link-wrapper {
   color: white;
