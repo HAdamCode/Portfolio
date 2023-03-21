@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Projects - Hunter Adam</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <label class="hamburger-menu">
-                <input type="checkbox" id="btnEnableDisable" value="Disable" onclick="EnableDisableLinks(this)">
-                <span class="menu"> <span class="hamburger"></span> </span>
-                <ul id="menu-wrapper" style="pointer-events: none; cursor: default;"> 
-                    <li> <a id = "home" href="Home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
-                    <li> <a id = "aboutme" href="AboutMe.html" style="pointer-events: none; cursor: default;">About Me</a> </li>
-                    <li> <a id = "projects" href="Projects.html" style="pointer-events: none; cursor: default;">Projects</a> </li>
-                    <li> <a id = "references" href="References.html" style="pointer-events: none; cursor: default;">References</a> </li>
-                </ul>
-            </label>
-            <div class="two-column-wrapper">
-                <div class="profile-content-wrapper">
-                    <iframe width="38%" height="400px" frameborder="0"
-                        src="https://youtube.com/embed/QMGUWXx0Ea8?autoplay=1&mute=1&controls=0&loop=1">
-                    </iframe>
-                    <iframe width="38%" height="400px" frameborder="0"
-                        src="https://youtube.com/embed/5Dky3l6OnHc?autoplay=1&mute=1&controls=0&loop=1">
-                    </iframe>
 
-                    
+<head>
+    <meta charset="utf-8" />
+    <title>Projects - Hunter Adam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ProjectsStyles.css">
+</head>
+
+<body>
+    <div class="container">
+        <label class="hamburger-menu">
+            <input type="checkbox" id="btnEnableDisable" value="Disable" onclick="EnableDisableLinks(this)">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul id="menu-wrapper" style="pointer-events: none; cursor: default;">
+                <li> <a id="home" href="Home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
+                <li> <a id="aboutme" href="AboutMe.html" style="pointer-events: none; cursor: default;">About Me</a>
+                </li>
+                <li> <a id="projects" href="Projects.html" style="pointer-events: none; cursor: default;">Projects</a>
+                </li>
+                <!-- <li> <a id="references" href="References.html"
+                        style="pointer-events: none; cursor: default;">References</a> </li> -->
+            </ul>
+        </label>
+        <div class="two-column-wrapper">
+            
+            <div class="hammer-wrapper">
+                <div class="hammer-left-wrapper">
+                    <h2>Arduino Thor's Hammer Project</h2>
+                    <iframe frameborder="0"
+                        src="https://youtube.com/embed/QMGUWXx0Ea8?autoplay=1&mute=1&controls=0&loop=1&playlist=QMGUWXx0Ea8">
+                    </iframe>
+                </div>
+                <p class="hammer-right-wrapper">This project used a combination of hardware and software skills grouping together
+                    physics, computer science and electrical engineering. TODO: Add more
+                </p>
+            </div>
+            <hr>
+            <div class="matlab-wrapper">
+                <p class="matlab-left-wrapper">This is a MATLAB project</p>
+                <div class="matlab-right-wrapper">
+                    <h2>MATLAB Thor's Hammer Project</h2>
+                    <iframe  frameborder="0"
+                    src="https://youtube.com/embed/5Dky3l6OnHc?autoplay=1&mute=1&controls=0&loop=1&playlist=5Dky3l6OnHc">
+                    </iframe>
                 </div>
             </div>
+            <hr>
+            <div class="capstone-wrapper">
+                <div class="capstone-left-wrapper">
+                    <h2>Capstone Security System Project</h2>
+                    <iframe  frameborder="0"
+                        src="https://youtube.com/embed/LgVAiTO7cUk?autoplay=1&mute=1&controls=0&loop=1&playlist=LgVAiTO7cUk&cc_load_policy=1">
+                    </iframe>
+                </div>
+                <p class="capstone-right-wrapper">This project used a combination of hardware and software skills grouping together
+                    physics, computer science and electrical engineering. TODO: Add more
+                </p>
+            </div>
+
         </div>
-        <script type="text/javascript" src="EnableDisableLinks.js"></script>
-    </body>
+    </div>
+    <script type="text/javascript" src="EnableDisableLinks.js"></script>
+</body>
+
 </html>
+<!-- width="38%" height="400px" -->

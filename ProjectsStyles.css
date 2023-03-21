@@ -1,3 +1,47 @@
-.two-column-wrapper {
-    flex-direction: column;
+.hammer-wrapper {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 20px 80px 30px 20px;
+}
+
+.hammer-left-wrapper {
+    text-align: center;
+}
+
+.hammer-right-wrapper {
+    padding: 120px 0px 0px 50px;
+}
+
+.matlab-wrapper {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding: 20px 80px 30px 20px;
+}
+
+.matlab-left-wrapper {
+    padding: 120px 0px 0px 50px;
+}
+
+.matlab-right-wrapper {
+    text-align: center;
+}
+
+.capstone-wrapper {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding: 20px 80px 0px 20px;
+}
+
+.capstone-left-wrapper {
+    text-align: center;
+}
+
+.capstone-right-wrapper {
+    padding: 120px 0px 0px 50px;
+}
+
+iframe {
+    aspect-ratio: 3.56 / 2;
+    width: 88%;
+    border: 20px solid black;
 }

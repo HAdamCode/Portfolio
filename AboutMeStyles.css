@@ -1,8 +1,12 @@
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
 .profile-image-wrapper {
-    width: 30%;
-    float: left;
+    width: 80%;
     border: 20px solid black;
-    margin: 40px 80px 0px 80px;
+    margin: 40px 80px 10px 20px;
 }
 
 .introduction-wrapper {
@@ -146,6 +150,10 @@
   .active,
   .demo:hover {
     opacity: 1;
+  }
+
+  .gallery {
+    display: grid
   }
 
   .gallery-wrapper {
