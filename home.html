@@ -1,177 +1,194 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Page Title</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="stylesheet" href="HomeStyles.css">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="containers">
-            <label class="hamburger-menu">
-                <input type="checkbox" id="btnEnableDisable" value="Disable" onclick="EnableDisableLinks(this)">
-                <span class="menu"> <span class="hamburger"></span> </span>
-                <ul id="menu-wrapper" style="pointer-events: none; cursor: default;"> 
-                    <li> <a id = "home" href="Home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
-                    <li> <a id = "aboutme" href="AboutMe.html" style="pointer-events: none; cursor: default;">About Me</a> </li>
-                    <li> <a id = "projects" href="Projects.html" style="pointer-events: none; cursor: default;">Projects</a> </li>
-                    <!-- <li> <a id = "references" href="References.html" style="pointer-events: none; cursor: default;">References</a> </li> -->
-                </ul>
-            </label>
-            <div class="content-wrapper">
-                <div class="portfolio-items-wrapper">
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/c++_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I am proficient in C, c++, C# and Java.
-                            </div>
-                            <a class="subtitle" href="Projects.html">See Projects</a>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="HomeStyles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="containers">
+        <label class="hamburger-menu">
+            <input type="checkbox" id="btnEnableDisable" value="Disable" onclick="EnableDisableLinks(this)">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul id="menu-wrapper" style="pointer-events: none; cursor: default;">
+                <li> <a id="home" href="Home.html" style="pointer-events: none; cursor: default;">Home</a> </li>
+                <li> <a id="aboutme" href="AboutMe.html" style="pointer-events: none; cursor: default;">About Me</a>
+                </li>
+                <li> <a id="projects" href="Projects.html" style="pointer-events: none; cursor: default;">Projects</a>
+                </li>
+                <!-- <li> <a id = "references" href="References.html" style="pointer-events: none; cursor: default;">References</a> </li> -->
+            </ul>
+        </label>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/c++_picture.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I am proficient in C, c++, C# and Java.
                         </div>
+                        <a class="subtitle" href="Projects.html">See Projects</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/leadership_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I led the Colorado Springs Children's Chorale in their summer retreat.
-                            </div>
-                            <a class="subtitle" href="References.html">See References</a>
-                        </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/leadership_picture.jpg)">
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/matlab_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I have used MATLAB for GUI design as well as Feedback Control Systems.
-                            </div>
-                            <a class="subtitle" href="Projects.html">See Projects</a>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I led the Colorado Springs Children's Chorale in their summer retreat.
                         </div>
+                        <a class="subtitle" href="References.html">See References</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/raspberrypi_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I have used Raspberry Pi for numerous projects.
-                            </div>
-                            <a class="subtitle" href="Projects.html">See Projects</a>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/matlab_picture.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I have used MATLAB for GUI design as well as Feedback Control Systems.
                         </div>
+                        <a class="subtitle" href="Projects.html">See Projects</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/responsibility_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I am responsible for getting up in the morning. Doing well so far.
-                            </div>
-                            <a class="subtitle" href="References.html">See References</a>
-                        </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/raspberrypi_picture.jpg)">
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/positivity_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I am known for my uplifting spirit and desire for other's happiness.
-                            </div>
-                            <a class="subtitle" href="References.html">See References</a>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I have used Raspberry Pi for numerous projects.
                         </div>
+                        <a class="subtitle" href="Projects.html">See Projects</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/sql_picture.avif)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I use SQL in my current job as well as two SQL and database management projects.
-                            </div>
-                            <a class="subtitle" href="Projects.html">See Projects</a>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image:url(images/responsibility_picture.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I am responsible for getting up in the morning. Doing well so far.
                         </div>
+                        <a class="subtitle" href="References.html">See References</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/python_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I use Python for quick scripting daily. 
-                            </div>
-                            <a class="subtitle" href="Projects.html">See Projects</a>
-                        </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/positivity_picture.jpg)">
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/curiosity_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I have a great desire to learn and experience new ideas. 
-                            </div>
-                            <a class="subtitle" href="References.html">See References</a>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I am known for my uplifting spirit and desire for other's happiness.
                         </div>
+                        <a class="subtitle" href="References.html">See References</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/inspiration_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I thrive off of other's success.
-                            </div>
-                            <a class="subtitle" href="References.html">See References</a>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/sql_picture.avif)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I use SQL in my current job as well as two SQL and database management projects.
                         </div>
+                        <a class="subtitle" href="Projects.html">See Projects</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/arduino_picture.jpg)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I have built many projects with Arduinos and other Arduino related components. 
-                            </div>
-                            <a class="subtitle" href="Projects.html">See Projects</a>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/python_picture.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I use Python for quick scripting daily.
                         </div>
+                        <a class="subtitle" href="Projects.html">See Projects</a>
                     </div>
-                    <div class="portfolio-item-wrapper">
-                        <div class="portfolio-img-background" style="background-image:url(images/perseverance_picture.webp)"></div>
-                        <div class="img-text-wrapper">
-                            <div class="subtitle" >
-                                I work hard at all of my projects, school work and industry work.
-                            </div>
-                            <a class="subtitle" href="References.html">See References</a>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/curiosity_picture.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I have a great desire to learn and experience new ideas.
                         </div>
+                        <a class="subtitle" href="References.html">See References</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/inspiration_picture.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I thrive off of other's success.
+                        </div>
+                        <a class="subtitle" href="References.html">See References</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/arduino_picture.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I have built many projects with Arduinos and other Arduino related components.
+                        </div>
+                        <a class="subtitle" href="Projects.html">See Projects</a>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background"
+                        style="background-image:url(images/perseverance_picture.webp)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            I work hard at all of my projects, school work and industry work.
+                        </div>
+                        <a class="subtitle" href="References.html">See References</a>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="footer">
-                <div class="contain">
-                    <div class="col">
-                        <h2>Navigation</h2>
-                        <ul>
-                            <li> <a id="homefooter" href="Home.html">Home</a>
-                            </li>
-                            <li> <a id="aboutmefooter" href="AboutMe.html">About Me</a>
-                            </li>
-                            <li> <a id="projectsfooter" href="Projects.html">Projects</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h2>Resources</h2>
-                        <ul>
-                            <li>Webmail</li>
-                            <li>Web templates</li>
-                            <li>Email templates</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h2>Contact</h2>
-                        <ul>
-                            <li>+91 9051 XXXXXX</li>
-                            <li>033 2464 XXXX</li>
-                            <li>abc@gmail.com</li>
-                        </ul>
-                    </div>
-                    <div class="col address">
-                        <h2>Address </h2>
-                        <ul>
-                            <li>Sky Towers, Service Road, Kolkata</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="contain">
+                <div class="col">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li> <a class="footer-link-wrapper" href="Home.html">Home</a>
+                        </li>
+                        <li> <a class="footer-link-wrapper" href="AboutMe.html">About Me</a>
+                        </li>
+                        <li> <a class="footer-link-wrapper" href="Projects.html">Projects</a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a class="footer-link-wrapper"
+                                href="https://www.linkedin.com/in/hunter-adam-linked-profile/"
+                                target="_blank">LinkedIn</a></li>
+                        <li><a class="footer-link-wrapper" href="https://github.com/HAdamCode"
+                                target="_blank">Github</a></li>
+                        <li><a class="footer-link-wrapper" href="resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li><a class="footer-link-wrapper" href="tel:7193221809">719-322-1809</a></li>
+                        <li><a class="footer-link-wrapper"
+                                href="mailto: hunter.j.adam@gmail.com">hunter.j.adam@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col address">
+                    <h2>Address </h2>
+                    <ul>
+                        <li><a class="footer-link-wrapper" href="https://goo.gl/maps/pFNCUvQNAwHt62dh6"
+                                target="_blank">1445 Lunnonhaus Dr. <br> Apt 12 <br> Golden, CO 80401</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
-        </footer>
-    </body>
-    <script src="EnableDisableLinks.js"></script>
+        </div>
+    </footer>
+</body>
+<script src="EnableDisableLinks.js"></script>
+
 </html>
